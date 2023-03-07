@@ -37,7 +37,8 @@ ionic serve
 
 ### Test unitarios
 
-![unit-tests](https://user-images.githubusercontent.com/22506256/223359736-09510afc-632c-443a-bcc5-962b2d098793.png)
+![unit-test](https://user-images.githubusercontent.com/22506256/223364380-1c124315-6149-470e-8e14-256c8237a5c2.png)
+
 
 
 ### APK - Android
