@@ -55,7 +55,7 @@ describe('HomePage', () => {
     });
   });
 
-  it('should test with id = 1', () => {
+  it('should find an image record with id 1', () => {
     const id = 1;
 
     component.ngOnInit();
@@ -69,7 +69,7 @@ describe('HomePage', () => {
     });
   });
 
-  it('should test with not exitst id = 5000', () => {
+  it('should not find an image record with id 5000', () => {
     const id = 5000;
 
     component.ngOnInit();
