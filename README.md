@@ -12,8 +12,8 @@ ionic serve
 - Se visualiza el formulario para iniciar sesión con una animación, el cual, tiene como campos requeridos: email y password.
 - Para iniciar sesión es importante usar las credenciales: 
 
-email: admin@admin.com
-password: secret
+* email: admin@admin.com
+* password: secret
 
 ### Página de Búsqueda de imágenes
 - Se visualiza una lista de imágenes y un buscador que permitir filtrar por los campos: id, title y text.
