@@ -16,6 +16,13 @@ ionic serve
 
 **password: secret**
 
+
+![login-mobile](https://user-images.githubusercontent.com/22506256/223359313-f290be6c-c3d8-4d9f-b389-5715955ec0a6.png)
+
+![login-tablet](https://user-images.githubusercontent.com/22506256/223359361-7a1fa3f6-2c98-4d1c-be06-c2d7f4936376.png)
+
+
+
 ### Página de Búsqueda de imágenes
 - Se visualiza una lista de imágenes y un buscador que permitir filtrar por los campos: id, title y text.
 - Se puede realizar la acción "Pull to refresh" para reiniciar la lista.
