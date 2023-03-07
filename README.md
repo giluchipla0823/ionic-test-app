@@ -28,3 +28,13 @@ ionic serve
 - Se puede realizar la acción "Pull to refresh" para reiniciar la lista.
 - Se puede realizar "Infinite scroll" para cargar más imágenes. 
 - Las imágenes se cargan mediante el componente "app-shell-image", el cual se encarga de mostrar la imagen una vez cargada con una animación. En caso que haya ocurrido un error, se muestra un mensaje de error.
+
+
+![home-mobile](https://user-images.githubusercontent.com/22506256/223359489-d431de4c-80c3-4ef2-9eee-eed96fe2cd23.png)
+
+![home-tablet](https://user-images.githubusercontent.com/22506256/223359536-a654259f-c724-4215-9eff-0891b7f2b08c.png)
+
+
+
+
+
