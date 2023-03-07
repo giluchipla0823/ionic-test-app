@@ -16,8 +16,33 @@ ionic serve
 
 **password: secret**
 
+
+![login-mobile](https://user-images.githubusercontent.com/22506256/223359313-f290be6c-c3d8-4d9f-b389-5715955ec0a6.png)
+
+![login-tablet](https://user-images.githubusercontent.com/22506256/223359361-7a1fa3f6-2c98-4d1c-be06-c2d7f4936376.png)
+
+
+
 ### Página de Búsqueda de imágenes
 - Se visualiza una lista de imágenes y un buscador que permitir filtrar por los campos: id, title y text.
 - Se puede realizar la acción "Pull to refresh" para reiniciar la lista.
 - Se puede realizar "Infinite scroll" para cargar más imágenes. 
 - Las imágenes se cargan mediante el componente "app-shell-image", el cual se encarga de mostrar la imagen una vez cargada con una animación. En caso que haya ocurrido un error, se muestra un mensaje de error.
+
+
+![home-mobile](https://user-images.githubusercontent.com/22506256/223359489-d431de4c-80c3-4ef2-9eee-eed96fe2cd23.png)
+
+![home-tablet](https://user-images.githubusercontent.com/22506256/223359536-a654259f-c724-4215-9eff-0891b7f2b08c.png)
+
+
+### Test unitarios
+
+![unit-test](https://user-images.githubusercontent.com/22506256/223364380-1c124315-6149-470e-8e14-256c8237a5c2.png)
+
+
+
+### APK - Android
+
+[app-debug.apk.zip](https://github.com/giluchipla0823/ionic-test-app/files/10906967/app-debug.apk.zip)
+
+
