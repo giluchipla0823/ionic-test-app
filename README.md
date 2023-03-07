@@ -40,4 +40,8 @@ ionic serve
 ![unit-tests](https://user-images.githubusercontent.com/22506256/223359736-09510afc-632c-443a-bcc5-962b2d098793.png)
 
 
+### APK - Android
+
+[app-debug.apk.zip](https://github.com/giluchipla0823/ionic-test-app/files/10906967/app-debug.apk.zip)
+
 
