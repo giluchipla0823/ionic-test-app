@@ -35,6 +35,9 @@ ionic serve
 ![home-tablet](https://user-images.githubusercontent.com/22506256/223359536-a654259f-c724-4215-9eff-0891b7f2b08c.png)
 
 
+### Test unitarios
+
+![unit-tests](https://user-images.githubusercontent.com/22506256/223359736-09510afc-632c-443a-bcc5-962b2d098793.png)
 
 
 
