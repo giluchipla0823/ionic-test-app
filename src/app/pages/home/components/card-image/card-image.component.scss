@@ -1,0 +1,29 @@
+@import "src/theme/_mixins.scss";
+
+ion-card {
+  margin-inline: 10px;
+
+  ion-card-header {
+    ion-card-title {
+      font-size: 24px;
+    }
+  }
+
+  app-image-shell {
+    height: 300px;
+    --image-object-fit: cover;
+
+    @include breakpoint-tablet() {
+      height: 24vw;
+    }
+  }
+
+  ion-card-content {
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}

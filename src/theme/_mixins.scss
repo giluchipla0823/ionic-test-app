@@ -1,0 +1,35 @@
+@mixin breakpoint-phone-mini {
+    @media only screen and (min-width: 400px){
+        @content;
+    }
+}
+
+@mixin breakpoint-phone {
+    @media only screen and (min-width: 480px){
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet {
+    @media only screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet-pro {
+    @media only screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop {
+    @media only screen and (min-width: 1200px){
+        @content;
+    }
+}
+
+@mixin breakpoint-custom($value) {
+    @media only screen and (min-width: #{$value}){
+        @content;
+    }
+}

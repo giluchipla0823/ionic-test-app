@@ -1,0 +1,35 @@
+ion-searchbar {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.wrapper-results {
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  .counter {
+    font-weight: 500;
+  }
+}
+
+ion-grid {
+  --ion-grid-padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  ion-row {
+    ion-col {
+      --ion-grid-column-padding: 0;
+    }
+  }
+}
+
+.wrapper-empty-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 100px);
+}

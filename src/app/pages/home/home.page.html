@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Inicio </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-searchbar
+    placeholder="Buscar..."
+    (ionChange)="onSearchChange($event)"
+    [debounce]="250"
+  ></ion-searchbar>
+
+  <ng-container *ngIf="counterDisplayedImages > 0; else emptyResults">
+    <div class="wrapper-results">
+      <span>Resultados</span>
+      <span class="counter"
+        >{{ counterDisplayedImages }}/{{ totalImages }}</span
+      >
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col
+          size="12"
+          size-sm="6"
+          size-md="4"
+          *ngFor="let image of images; trackBy: trackByItems"
+        >
+          <app-card-image [item]="image"></app-card-image>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-container>
+
+  <ng-template #emptyResults>
+    <div class="wrapper-empty-results">
+      <app-empty-results
+        [iconName]="emptyResultsData.icon"
+        [message]="emptyResultsData.message"
+        [additionalMessage]="emptyResultsData.additionalMessage"
+      ></app-empty-results>
+    </div>
+  </ng-template>
+
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadMore()">
+    <ion-infinite-scroll-content
+      loadingText="Cargando más..."
+    ></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+<!-- <ng-template #emptyResults>
+  <div class="wrapper-empty-search">
+    <app-empty-results 
+      [iconName]="emptyResultsIcon" 
+      [message]="emptyResultsMessage"
+      [additionalMessage]="emptyResultsAdditionalMessage"></app-empty-results>
+  </div>
+</ng-template> -->

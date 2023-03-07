@@ -1,0 +1,14 @@
+<ion-card *ngIf="item">
+  <app-image-shell
+    animation="spinner"
+    [alt]="item.title"
+    [src]="item.photo"
+  ></app-image-shell>
+  <ion-card-header>
+    <ion-card-title>{{ item.title }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>{{ item.text }}</p>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,117 @@
+@import "src/theme/_mixins.scss";
+
+$breakpoint-mobile: 476px;
+$breakpoint-desktop: 960px;
+
+ion-content {
+  --background: url("/assets/images/background.jpg") no-repeat;
+
+  &::part(background) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.wrapper-content {
+  margin-top: var(--ion-safe-area-top, 0);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  @include breakpoint-custom($breakpoint-desktop) {
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+
+    @include breakpoint-custom($breakpoint-mobile) {
+      max-width: 400px;
+    }
+
+    .card-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 40px;
+
+      .card-title {
+        display: none;
+      }
+
+      @include breakpoint-custom($breakpoint-desktop) {
+        background: #fff;
+        padding-top: 40px;
+        padding-bottom: 10px;
+
+        .card-title {
+          display: block;
+        }
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .card-content {
+      overflow: hidden;
+      background: #fff;
+
+      form {
+        .controls-form {
+          padding: 16px;
+
+          @include breakpoint-custom($breakpoint-desktop) {
+            padding: 16px 28px;
+          }
+        }
+      }
+
+      ion-item {
+        --padding-start: 0;
+        --inner-padding-end: 0;
+
+        ion-icon {
+          margin-inline-end: 16px;
+        }
+      }
+
+      .wrapper-btn-login {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @include breakpoint-custom($breakpoint-desktop) {
+          padding: 24px 0;
+        }
+
+        ion-button {
+          height: 50px;
+          margin: 0;
+          --box-shadow: unset;
+          --border-radius: 0;
+          width: 100%;
+          --background: #0165bd;
+          --color: #fff;
+
+          @include breakpoint-custom($breakpoint-desktop) {
+            width: 230px;
+            --border-radius: 24px;
+            --background: transparent;
+            --color: #000;
+            --border-color: #0165bd;
+            --border-width: 2px;
+            --border-style: solid;
+            --ripple-color: #3396ed;
+          }
+        }
+      }
+    }
+  }
+}

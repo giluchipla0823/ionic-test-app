@@ -1,0 +1,49 @@
+<ion-content class="ion-padding">
+  <div class="wrapper-content">
+    <div class="card animation animation-zoom-in-down">
+      <div class="card-header">
+        <img src="assets/images/logo.jpg" alt="" />
+
+        <h1 class="card-title">Prueba técnica</h1>
+      </div>
+      <div class="card-content">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="controls-form">
+            <ion-item>
+              <ion-icon slot="start" name="person-outline"></ion-icon>
+              <ion-input
+                type="email"
+                placeholder="Email"
+                formControlName="email"
+              ></ion-input>
+            </ion-item>
+            <app-error-messages [control]="f.email"></app-error-messages>
+            <ion-item>
+              <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+
+              <app-show-hide-password>
+                <ion-input
+                  type="password"
+                  placeholder="Contraseña"
+                  formControlName="password"
+                ></ion-input>
+              </app-show-hide-password>
+            </ion-item>
+            <app-error-messages [control]="f.password"></app-error-messages>
+            <ion-item lines="none" class="remember-item">
+              <ion-label>Recordar</ion-label>
+              <ion-toggle
+                mode="md"
+                slot="end"
+                formControlName="remember_me"
+              ></ion-toggle>
+            </ion-item>
+          </div>
+          <div class="wrapper-btn-login">
+            <ion-button type="submit" class="btn-login"> Acceder </ion-button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>
